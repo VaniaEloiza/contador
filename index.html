@@ -1,0 +1,67 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>Contador Vânia</title>
+            <style>
+                * {
+                margin: 0;
+                box-sizing: border-box;
+                }
+
+                body {
+                    border: 10px solid red;
+                    min-height 100vh;
+                    background: black;
+                    color: white;
+                    display: grid;
+                    place-items: center;
+                }
+
+                section {
+                    background: rgba(255, 255, 255,.2);
+                    padding: 20px;
+                    border-radius: 5px;
+                    text-align: center;
+                }
+
+                p {
+                    front-size: 100px;
+                }
+            </style>
+        </head>
+
+        <body>
+            <section>
+                <h1>Contador</h1>
+                <p id>*resultado*</p>
+                <button onclick=*diminuir()*>menos</button>
+                <button onclick=*aumentar()*>mais</button>
+            </section>    
+            <script>
+                // estado da minha aplicação
+                let numero = 0;
+
+                // alteradores de estados da aplicação
+                 function aumentar() {
+                    numero++
+                    MostrarNaTela()
+                 }
+
+                 function diminuir() {
+                    numero--
+                    MostrarNaTela()
+                 }
+
+                 // jogar o estado da aplicação na tela
+                 function MostrarNaTela(){
+                    const p = document.querySelector(*resultado*)
+                    p.innerText + numero
+                 }
+
+                 //iniciar
+                 MostrarNaTela
+            </script>
+        </body>
+
+    </html>
+</DOCTYPE>
