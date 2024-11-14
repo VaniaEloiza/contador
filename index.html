@@ -32,9 +32,9 @@
         <body>
             <section>
                 <h1>Contador</h1>
-                <p id>0</p>
-                <button onclick=*diminuir()*>menos</button>
-                <button onclick=*aumentar()*>mais</button>
+                id="resultado"
+                <button onclick="diminuir()">menos</button>
+                <button onclick="aumentar()">mais</button>
             </section>    
         <script>
                 // estado da minha aplicação
@@ -53,12 +53,11 @@
 
                  // jogar o estado da aplicação na tela
                  function MostrarNaTela(){
-                    const p = document.querySelector(*resultado*)
-                    p.innerText + numero
+                    const p = document.querySelector("#resultado")
+                    p.innerText = numero
                  }
 
                  //iniciar
-                 MostrarNaTela
             </script>
         </body>
 
