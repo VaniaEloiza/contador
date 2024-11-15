@@ -24,7 +24,7 @@
                 }
 
                 p {
-                    font-size: 10vh;
+                    font-size: 20vh;
                 }
             </style>
         </head>
@@ -32,33 +32,37 @@
         <body>
             <section>
                 <h1>Contador</h1>
-                <p id>0</p>
+                <p id="p"></p>0</p>
                 <button onclick="diminuir()">menos</button>
                 <button onclick="aumentar()">mais</button>
             </section>    
         <script>
                 // estado da minha aplicação
-                let numero = 0
+                let numero = 0;
 
                 // alteradores de estados da aplicação
                  function aumentar() {
-                    numero++
-                    MostrarNaTela()
+                    numero++;
+                    MostrarNaTela();
                  }
 
                  function diminuir() {
-                    numero--
-                    MostrarNaTela()
+                    numero--;
+                    MostrarNaTela();
                  }
 
                  // jogar o estado da aplicação na tela
                  function MostrarNaTela(){
-                    const p = document.querySelector("#resultado")
-                    p.innerText = numero
+                    const p = document.getElementById("p");
+                    p.innerText = numero;
                  }
 
-                 //iniciar
-                 MostrarNaTela
+                 //Inicializar o contador
+                 function iniciar() {
+                 MostrarNaTela;
+                 }
+                 iniciar();
+                 //Chamar a função de inicialização
             </script>
         </body>
 
